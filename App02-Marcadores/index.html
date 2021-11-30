@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src *; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <title>Marcadores</title>
+</head>
+<body>
+    <h1>Marcadores</h1>
+
+    <section class="criacao-marcador">
+        <form class="criacao-marcador-formulario">
+            <input type="url" class="criacao-marcador-url" placeholder="URL" required>
+            <input type="submit" value="Criar" class="criacao-marcador-btn" disabled>
+        </form>
+    </section>
+
+    <div class="msg-error"></div>
+
+    <secttion class="marcadores"></secttion>
+
+    <section id="controles">
+        <button class="remover-marcadores">Excluir Marcadores</button>
+    </section>
+
+    <script src="./renderer.js"></script>
+</body>
+</html>

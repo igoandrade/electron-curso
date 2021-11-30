@@ -1,0 +1,28 @@
+{
+  "name": "marcadores",
+  "version": "1.0.0",
+  "description": "Aplicação para gerenciamento de marcadores (bookmarks).",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igoandrade/electron-curso.git"
+  },
+  "keywords": [
+    "Aplicação",
+    "Escritório",
+    "Multiplataforma",
+    "Electron"
+  ],
+  "author": "Igo da Costa Andrade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igoandrade/electron-curso/issues"
+  },
+  "homepage": "https://github.com/igoandrade/electron-curso#readme",
+  "devDependencies": {
+    "electron": "^16.0.2"
+  }
+}
