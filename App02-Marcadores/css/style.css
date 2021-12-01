@@ -1,0 +1,13 @@
+html {
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px;
+}
+.btn:focus {
+    box-shadow: none;
+  }
+
+
+
+
+

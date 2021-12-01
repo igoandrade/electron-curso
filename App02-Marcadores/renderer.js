@@ -60,8 +60,7 @@ class Marcadores {
     }
 
     gerarMarcadorHtml(marcador) {
-        return `<div class="enlace"><h3>${marcador.titulo}</h3>
-        <p><a href="${marcador.url}">${marcador.url}</a></p></div>`;
+        return `<li class="list-group-item"><strong>${marcador.titulo}</strong></br><a href="${marcador.url}">${marcador.url}</a></li>`;
     }
 
     visualizarMarcadores() {
@@ -73,10 +72,13 @@ class Marcadores {
     }
 
     reportarError(error, url) {
+        this.msgError.classList.remove('d-none');
+
         this.msgError.innerHTML = `Ocorreu um erro ao tentar acessar a url <strong>${url}</strong>: ${error}`;
 
         setTimeout(() => {
             this.msgError.innerHTML = null;
+            this.msgError.classList.add('d-none');
         }, 5000);
     }
 
