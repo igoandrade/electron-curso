@@ -5,7 +5,11 @@ html {
 }
 .btn:focus {
     box-shadow: none;
-  }
+}
+
+.btn {
+    font-weight: 600;
+}
 
 
 
