@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mdb.min.css">
+    <title>Gestor de Registro de Pessoas</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <div id="formNovoRegistro" class="col-md">
+                <form class="border p-4">
+                    <p class="h4 mb-4 text-left">Novo registro</p>
+                    <!-- Name input -->
+                    <div class="form-outline mb-4 ">
+                      <input type="text" id="nome" class="form-control" required/>
+                      <label class="form-label" for="nome">Nome</label>
+                    </div>
+
+                    <!-- User Name input -->
+                    <div class="form-outline mb-4 ">
+                      <input type="text" id="usuario" class="form-control" required/>
+                      <label class="form-label" for="usuario">Usuário</label>
+                    </div>
+                  
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                      <input type="email" id="email" class="form-control" required />
+                      <label class="form-label" for="email">Email</label>
+                    </div>
+                  
+                    <!-- Submit button -->
+                    <button id="btnCriarRegistro" type="submit" class="btn btn-success btn-block mb-4">Criar Registro</button>
+                  </form>            
+                </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md">
+                <p class="h4 mb-4 text-center">Registros</p>
+                <table class="table table-striped table-hover table-sm">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nome</th>
+                            <th>Usuário</th>
+                            <th>Email</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="registros">
+                        <tr>
+                            <td>1</td>
+                            <td>Igo</td>
+                            <td>igoandrade</td>
+                            <td>igoandrade@gmail.com</td>
+                            <td>Editar/Excluir</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/mdb.min.js"></script>
+</body>
+
+</html>
