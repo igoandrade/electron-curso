@@ -1,0 +1,36 @@
+{
+  "name": "app03-gestor-pessoas",
+  "version": "1.0.0",
+  "description": "Aplicação de escritório para Gerenciamento de Registro de Pessoas",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igoandrade/electron-curso.git"
+  },
+  "keywords": [
+    "Aplicação",
+    "Escritório",
+    "Multiplataforma",
+    "Electron",
+    "JS",
+    "gerenciamento",
+    "registro",
+    "de",
+    "pessoas"
+  ],
+  "author": "Igo da Costa Andrade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igoandrade/electron-curso/issues"
+  },
+  "homepage": "https://github.com/igoandrade/electron-curso#readme",
+  "devDependencies": {
+    "electron": "^16.0.4"
+  },
+  "dependencies": {
+    "nedb": "^1.8.0"
+  }
+}
