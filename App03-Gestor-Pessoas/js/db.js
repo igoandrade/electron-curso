@@ -22,7 +22,7 @@ exports.getPersons = function(operation) {
 };
 
 exports.removePerson = function(id) {
-    db.remove({_id = id}, -{}, function(error, numberofRecordsRemoved) {
+    db.remove({_id: id}, -{}, function(error, numberofRecordsRemoved) {
 
     });
 };
