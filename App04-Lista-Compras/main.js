@@ -28,7 +28,17 @@ let mainTemplateMenu = [
 ];
 
 function createNewProductWindow() {
+    newProductWindow = new BrowserWindow({
+        width: 300,
+        height: 200,
+        title: 'Adicionar Novo Produto'
+    });
 
+    newProductWindow.loadFile('./html/novo-produto.html');
+
+    newProductWindow.on('close', function() {
+        newProductWindow = null;
+    });
 }
 
 let mainWindow;
