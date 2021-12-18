@@ -4,7 +4,7 @@
   "description": "Aplicação de Escritório Multiplataforma em Electron",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "set DEBUG=true & electron ."
   },
   "repository": {
     "type": "git",

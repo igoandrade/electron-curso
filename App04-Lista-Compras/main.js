@@ -27,7 +27,44 @@ let mainTemplateMenu = [
     }
 ];
 
+if (process.env.DEBUG) {
+    mainTemplateMenu.push({
+        label: 'Debbuging',
+        submenu: [
+            {
+                label: 'Dev Tools',
+                role: 'toggleDevTools'
+            },
+            { type: 'separator' },
+            {
+                role: 'reload',
+                accelerator: 'Alt + R'
+            }
+        ]
+    });
+}
+
+
+
 let newProductTemplateMenu = [];
+
+if (process.env.DEBUG) {
+    newProductTemplateMenu.push({
+        label: 'Debbuging',
+        submenu: [
+            {
+                label: 'Dev Tools',
+                role: 'toggleDevTools'
+            },
+            { type: 'separator' },
+            {
+                role: 'reload',
+                accelerator: 'Alt + R'
+            }
+        ]
+    });
+}
+
 
 function createNewProductWindow() {
     newProductWindow = new BrowserWindow({
@@ -35,7 +72,11 @@ function createNewProductWindow() {
         modal: true,
         width: 400,
         height: 200,
-        title: 'Adicionar Novo Produto'
+        title: 'Adicionar Novo Produto',
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false,
+        }
     });
 
     newProductWindow.loadFile('./html/novo-produto.html');
@@ -57,7 +98,8 @@ function createMainWindow() {
         width: 800,
         height: 600,
         webPreferences: {
-            nodeIntegration: true
+            nodeIntegration: true,
+            contextIsolation: false
         }
     });
 
@@ -70,3 +112,7 @@ function createMainWindow() {
 
 
 app.whenReady().then(createMainWindow);
+
+ipcMain.on('produto:adicionar', function(evento, nomeProduto) {
+    mainWindow.webContents.send('produto:adicionar', nomeProduto);
+});
