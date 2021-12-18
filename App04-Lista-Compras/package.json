@@ -1,0 +1,25 @@
+{
+  "name": "app04-lista-compras",
+  "version": "1.0.0",
+  "description": "Aplicação de Escritório Multiplataforma em Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igoandrade/electron-curso.git"
+  },
+  "keywords": [
+    "electron",
+    "escritório",
+    "aplicação",
+    "multiplataforma"
+  ],
+  "author": "Igo da Costa Andrade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igoandrade/electron-curso/issues"
+  },
+  "homepage": "https://github.com/igoandrade/electron-curso#readme"
+}
